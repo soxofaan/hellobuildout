@@ -25,25 +25,25 @@ What's included?
 Here's a short overview of the "source" files in this projects and where they come from.
 
 
-* ```hellobuildout```: simple Python module for saying hello and a bit of tests for that.
+* `hellobuildout`: simple Python package for saying hello and a bit of tests for that.
 
-* ```bootstrap.py```: this is Buildout's bootstrap script, downloaded with:
+* `bootstrap.py`: this is Buildout's bootstrap script, just downloaded as follows:
 
     ```
     wget http://downloads.buildout.org/2/bootstrap.py
     ```
 
-* ```buildout.cfg```: minimal skeleton was first generated with:
+* `buildout.cfg`: the initial version of this Buildout configuration skeleton was generated as follows:
 
     ```
     python bootstrap.py init
     ```
 
-    After that, some more Buildout "parts" where added.
+    After that, some more Buildout "parts" where added manually.
 
-* ```setup.py```: standard setup script that describes the hellobuildout package and its related console scripts
+* `setup.py`: standard `setup.py` script that describes the hellobuildout package and its related console scripts.
 
-* ```.gitignore```: includes some output files/folders from Buildout/setuptools to better not put in version control
+* `.gitignore`: includes some output files/folders from Buildout/setuptools, which you better not put in your VCS.
 
 
 What to do with it?
@@ -73,5 +73,5 @@ What to do with it?
 More info
 ---------
 
-Look in ```buildout.cfg``` and ```setup.py``` for a bit more information.
+Look in `buildout.cfg` and `setup.py` for a bit more information and configuration details.
 
