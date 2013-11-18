@@ -2,8 +2,8 @@
 Hello Buildout
 ==============
 
-This is a minimal toy project to get the hang of how Buildout works.
-It is basically a simple module with tests and some metadata/configuration
+This is a minimal toy project to get the hang of how [Buildout](http://www.buildout.org/) works.
+It is basically a simple Python module with tests and some metadata/configuration
 (```setup.py``` and ```buildout.cfg```) to get things rolling.
 
 
@@ -16,7 +16,7 @@ The article/tutorial that helped me most, after wading through numerous others, 
 [Developing Django apps with zc.buildout by Jacob Kaplan-Moss](http://jacobian.org/writing/django-apps-with-buildout/).
 
 This project was a dummy project to play with and better understand Buildout.
-I hope that by sharing it, I make the make the road to understanding Buildout for one or two people a bit easier.
+I hope that by sharing it, I make the road to understanding Buildout a bit less bumpy for one or two people.
 
 
 What's included?
@@ -39,7 +39,7 @@ Here's a short overview of the "source" files in this projects and where they co
     python bootstrap.py init
     ```
 
-    After that, some more "parts" where added.
+    After that, some more Buildout "parts" where added.
 
 * ```setup.py```: standard setup script that describes the hellobuildout package and its related console scripts
 
@@ -51,16 +51,27 @@ What to do with it?
 
 1. Bootstrap Buildout (sets up basic buildout folder structure):
 
-    ```python bootstrap.py```
+    ```
+    python bootstrap.py
+    ```
 
 2. Run Buildout (fetches dependencies, and puts some requested scripts into `bin/`):
 
-    ```./bin/buildout```
+    ```
+    ./bin/buildout
+    ```
 
 3. Run the generated scripts
 
+    ```
     ./bin/helloworld
     ./bin/hellobuildout
     ./bin/test
+    ```
 
+
+More info
+---------
+
+Look in ```buildout.cfg``` and ```setup.py``` for a bit more information.
 
